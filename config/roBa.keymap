@@ -70,7 +70,7 @@
 &kp Q           &kp W             &kp E             &kp R                        &kp T                                                 &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A           &kp S             &kp D             &kp F                        &kp G        &kp TAB                   &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
 &kp Z           &kp X             &kp C             &kp V                        &kp B        &kp CAPS                  &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 TAB      &kp BACKSPACE  &lt 1 ENTER                             &kp UP_ARROW
+&kp LEFT_SHIFT  &kp LEFT_CONTROL  &kp LEFT_COMMAND  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 6 TAB      &kp BACKSPACE  &lt 1 ENTER                             &kp UP_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -125,10 +125,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0          &bt BT_SEL 1          &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4
+&trans  &trans        &trans        &trans        &trans  &trans      &trans       &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &kp K_MUTE    &kp C_VOLUME_UP  &kp C_VOLUME_DOWN
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans                &trans                &trans        &trans           &bt BT_CLR
+&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                                     &bt BT_CLR_ALL
             >;
         };
     };
