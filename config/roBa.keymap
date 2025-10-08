@@ -109,10 +109,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
+&kp ESCAPE      &kp LC(LS(TAB))         &none           &kp LC(TAB)              &trans                               &trans           &trans  &trans  &trans  &trans
+&kp HOME        &kp LEFT_ARROW          &kp UP_ARROW    &kp RIGHT_ARROW          &kp END  &trans      &trans          &trans           &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans          &trans           &trans  &trans  &trans  &trans
+&trans          &trans                  &trans          &trans                   &trans   &trans      &kp LEFT_ARROW  &kp RIGHT_ARROW                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -120,10 +120,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&trans     &trans  &trans        &trans  &trans                      &trans  &trans    &trans    &trans    &trans
+&trans     &trans  &trans        &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
+&kp GRAVE  &trans  &trans        &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&trans     &trans  &kp LEFT_GUI  &trans  &trans  &trans      &trans  &trans                                &trans
             >;
         };
 
